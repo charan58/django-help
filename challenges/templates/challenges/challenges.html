@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load static %}
+{% block "title" %}Monthly challenges{% endblock "title" %}
+{% block "content" %}
+    {% include "./navbar.html" %}
+    <h1>Your challenge for the month {{ month }}</h1>
+    <h2>{{ text|title}}</h2>
+{% endblock "content" %}
+
